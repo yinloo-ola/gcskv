@@ -51,6 +51,7 @@ func New(bucket string, basepath string) (GcsStore, error) {
 //
 // add more docs
 // even more docs
+// feature 1
 func (store GcsStore) Get(key string) ([]byte, error) {
 	ctx := context.Background()
 	key = store.basepath + key

@@ -114,6 +114,7 @@ func (store GcsStore) Size() (int, error) {
 //
 // prefix is prepended to both the startKey and endKey to form 2 complete keys.
 // For example, Scan("foo/", "a", "b") will return all the keys >= "foo/a" and < "foo/b"
+// bug fix 3
 func (store GcsStore) Scan(prefix, startKey, endKey string) ([]string, error) {
 	ctx := context.Background()
 	query := &storage.Query{

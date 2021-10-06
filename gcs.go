@@ -70,6 +70,7 @@ func (store GcsStore) Get(key string) ([]byte, error) {
 
 // Set creates or overwrites a key/value pair
 // bug fix in here
+// feature 2 completed
 func (store GcsStore) Set(key string, value []byte) error {
 	ctx := context.Background()
 	key = store.basepath + key

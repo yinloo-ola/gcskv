@@ -84,6 +84,7 @@ func (store GcsStore) Set(key string, value []byte) error {
 }
 
 // Del removes the key/value pair from the GcsStore
+// bug fix 2
 func (store GcsStore) Del(key string) error {
 	ctx := context.Background()
 	key = store.basepath + key

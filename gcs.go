@@ -92,6 +92,7 @@ func (store GcsStore) Del(key string) error {
 }
 
 // Size returns the number of key/value pairs in the GcsStore
+// feature 3
 func (store GcsStore) Size() (int, error) {
 	ctx := context.Background()
 	query := &storage.Query{Prefix: store.basepath}

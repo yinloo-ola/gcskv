@@ -48,6 +48,9 @@ func New(bucket string, basepath string) (GcsStore, error) {
 }
 
 // Get returns the value of the given key. Error is returned if the key is not found
+//
+// add more docs
+// even more docs
 func (store GcsStore) Get(key string) ([]byte, error) {
 	ctx := context.Background()
 	key = store.basepath + key
